@@ -1,0 +1,190 @@
+
+body {
+  font-family:$primary-font;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:before {
+      content: "";
+      display: inline-block;
+      margin-left: 0 !important;
+    }
+  }
+
+  .container {
+    max-width: 1120px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+  }
+
+
+}
+
+
+.Banner {
+  position: relative;
+  z-index: 9;
+
+
+  &-in {
+    position: relative;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-text {
+
+    h1 {
+      font-size: 77px;
+      font-weight: 500;
+      letter-spacing: -4.32px;
+      color: #32364d;
+      line-height: 1;
+    }
+
+  }
+
+
+}
+
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  z-index: 1;
+  cursor: pointer;
+  &:hover{
+
+    transition: 500ms;
+  }
+
+}
+
+
+.lv_skin {
+  canvas {
+    opacity: 0 !important;
+  }
+}
+
+
+
+.mobile {
+  display: none !important;
+}
+
+.mobile-f {
+  display: none !important;
+}
+
+.desktop {
+  display: block;
+}
+.desktop-f{
+  display: flex;
+}
+
+.scroll {
+  bottom: 10vh;
+  z-index: 99;
+  position: absolute;
+  left: 40%;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    transition: 500ms;
+    width: 1px;
+    height: 56px;
+    background-color: #ffffff;
+    margin-right: 24px;
+  }
+
+
+
+  span {
+    display: block;
+    width: 2px;
+    left: 38px;
+    height: 8px;
+    border-radius: 4px;
+    background: red;
+    border: 1px solid transparent;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+.global_link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Regular.ttf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(../font/gilroy/Gilroy-Black.ttf);
+  font-weight: 900;
+}
+
